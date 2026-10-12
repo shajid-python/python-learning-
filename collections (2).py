@@ -1,0 +1,1 @@
+print("Day 5: Resting today, starting Functions tomorrow.")
