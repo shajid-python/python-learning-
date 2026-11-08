@@ -1,20 +1,16 @@
-class Contact:
-    # The __init__ method runs automatically when we creat a new contact 
-    def __init__(self, name, phone):
-        self.name = name 
-        self.phone = phone
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
 
-    # A method  (a function inside a class)
     def display_info(self):
-        print(f"Name: {self.name} | phone: {self.phone}")
+        print(f"Title: {self.title} | Author: {self.author}")
 
-# 1. Creating instances (objects) from the class
-contact1 = Contact("Shajid", "1234567890")
-contact2 = Contact("Ammi", "6281115114")
+    def read_book(self):
+        print(f"I am reading {self.title} by {self.author}.")
 
-# 2. Accessing attributes directly
-print(contact1.name)
+book1 = Book("Harry potter", "j.k. Rowling")
+book2 = Book("Atomic habits", "james clear")
 
-# 3. calling methods
-contact1.display_info()
-contact2.display_info()
+book1.read_book()
+book2.read_book()
